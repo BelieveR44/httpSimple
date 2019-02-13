@@ -1,4 +1,4 @@
-package httpgo
+package main
 
 import (
 	"HttpRequest"
@@ -58,7 +58,7 @@ func main() {
 		fmt.Println(string(body))
 	}
 
-	或者打印Json
+	//或者打印Json
 	if resp.StatusCode() == 200 {
 		body, err := resp.Json()
 
